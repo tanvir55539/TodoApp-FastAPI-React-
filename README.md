@@ -1,3 +1,7 @@
+To run the Frontend part go to the Frontend/todo-app directory then write "npm start"
+
+To run the backend active the environment then write "uvicorn main:app --reload" in the terminal
+
 **The login interface:**
 ![image](https://github.com/user-attachments/assets/2390db74-34c8-48f3-aa8f-85b6d81c2c47)
 
