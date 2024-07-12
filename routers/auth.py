@@ -39,21 +39,13 @@ models.Base.metadata.create_all(bind=engine)
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl="token")
 
 firebaseConfig = {
-    # "apiKey": "AIzaSyBdWEHGajhJ8qS9qFx_vaNs3HufSW6xYkI",
-    # "authDomain": "userverification-7f771.firebaseapp.com",
-    # "projectId": "userverification-7f771",
-    # "storageBucket": "userverification-7f771.appspot.com",
-    # "messagingSenderId": "286930370148",
-    # "appId": "1:286930370148:web:1db599fae38d3d55dc6971",
-    # "measurementId": "G-EJ6VDQMVSJ",
-    # "databaseURL": "sqlite:///./todosapp.db"
+   
 }
 
 firebase = pyrebase.initialize_app(firebaseConfig)
 
 authen = firebase.auth()
 
-# cred = credentials.Certificate("userverification-7f771.json")
 cred = credentials.Certificate("")
 
 firebase_admin.initialize_app(cred)
